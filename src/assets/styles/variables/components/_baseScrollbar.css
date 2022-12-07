@@ -1,0 +1,5 @@
+.scrollbar {
+  --scrollbar-background-color: transparent;
+  --scrollbar-thumb-background-color: var(--blue-600);
+  --scrollbar-thumb-background-color-hover: var(--blue-700);
+}

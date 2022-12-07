@@ -1,0 +1,26 @@
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-background-color) transparent;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background-color: var(--scrollbar-background-color);
+}
+.scrollbar::-webkit-scrollbar-track {
+  margin: 8px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  border: 4px solid transparent;
+  border-radius: 8px;
+  background-color: var(--scrollbar-thumb-background-color);
+  background-clip: content-box;
+}
+@media (any-pointer: fine) {
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-background-color-hover);
+  }
+}
+.scrollbar::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

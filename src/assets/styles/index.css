@@ -1,0 +1,57 @@
+@import "./_fonts.css";
+@import "./_resetCss.css";
+@import "./_normalizeCss.css";
+@import "./helpers/index.css";
+@import "./variables/index.css";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  color: var(--bluegray-900);
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media (min-width: 1170px) {
+  .container {
+    max-width: 1136px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.container--wide {
+  margin: 0 -16px;
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  .container--wide {
+    margin: 0 -32px;
+    padding: 0 32px;
+  }
+}
+@media (min-width: 1170px) {
+  .container--wide {
+    margin: 0 calc((100vw - 1136px - var(--scrollbar-width)) / -2);
+    padding: 0 calc((100vw - 1170px + var(--scrollbar-width)) / 2);
+  }
+}
