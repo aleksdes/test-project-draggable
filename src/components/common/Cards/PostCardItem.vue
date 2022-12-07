@@ -32,6 +32,7 @@ defineProps({
   padding: 15px 25px
   border-radius: 6px
   border: 1px solid var(--gray-100)
+  cursor: pointer
 
   @media (any-pointer: fine)
     &:hover
